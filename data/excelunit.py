@@ -30,8 +30,3 @@ class ExcelUtil:
             return r
 
 
-if __name__ == "__main__":
-    filePath = "D:\\潘泽—工作文件\\pyrequest\\data\\test.xlsx"
-    sheetName = "Sheet1"
-    data = ExcelUtil(filePath, sheetName)
-    print(data.dict_data())

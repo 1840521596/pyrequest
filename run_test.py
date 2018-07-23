@@ -3,11 +3,10 @@ import sys
 import time
 import unittest
 from HTMLTestRunner import HTMLTestRunner
-# from db_fixture import test_data
-
-
-# reload(__import__('sys')).setdefaultencoding('utf-8')
 from common import send_mail
+# from db_fixture import test_data
+# reload(__import__('sys')).setdefaultencoding('utf-8')
+
 
 sys.path.append('./interface')
 sys.path.append('./db_fixture')
