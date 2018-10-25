@@ -42,8 +42,6 @@ class CreditTransfer(unittest.TestCase):
         r = requests.post(self.base_url, data=payload)
         result = r.json()
         print(result)
-        # self.assertEqual(result['code'], "0")
-        # self.assertEqual(result['message'], "转帐成功")
 
     def test_transfer_user_noExist(self):
         """测试收款用户不存在"""

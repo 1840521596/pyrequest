@@ -39,7 +39,10 @@ def email_init(report, report_name):
 
 
 def send_report():
+    """
     # 找到最新的测试报告
+    :return:
+    """
     report_list = os.listdir(gl.report_path)
     report_list.sort(
         key=lambda fn: os.path.getmtime(gl.report_path + fn) if not os.path.isdir(gl.report_path + fn) else 0)
